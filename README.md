@@ -19,4 +19,6 @@ sudo yum install ruby
 ```
 
 ## 実行方法
+```sh
 ruby ./recipe.rb
+```
