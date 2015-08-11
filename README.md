@@ -22,3 +22,14 @@ sudo yum install ruby
 ```sh
 ruby ./recipe.rb
 ```
+
+## レシピ情報
+レシピ情報は、```recipe-data.txt```に記載されている。
+
+### 書式
+レシピ情報は、以下のように料理名を1行毎に記載する。
+```
+料理A
+料理B
+料理C
+```
