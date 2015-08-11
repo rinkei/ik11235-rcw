@@ -38,7 +38,7 @@ recipe = nil
 
 recipes = []
 recipe_file.each_line do |line|
-  if line.length <= 1
+  if line.length <= 2
     # 空行なので保存して次のレシピへ
     recipes << recipe
     recipe = nil
@@ -59,6 +59,9 @@ recipe_file.each_line do |line|
     end
   end
 end
+
+# 最後のレシピを保存
+recipes << recipe
 
 recipes.each do |recipe|
   recipe.output if output_id?(output_recipe_id, recipe.id)
